@@ -1,0 +1,12 @@
+<h1>Stats from <%= String.split(path, "/") |> List.last %></h1>
+<table style="width: 70%; text-align: right;">
+<thead>
+<tr><%=for t<- titles, do: "<th>#{t}</th>"%></tr>
+</thead>
+<%=for line <- lines do %>
+<tr>
+<%= line
+|> String.split(",")
+|> Enum.map(&("<td>#{&1}</td>")) %></tr>
+<%= end %>
+</table>

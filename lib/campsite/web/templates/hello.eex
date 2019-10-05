@@ -1,0 +1,7 @@
+Hi, i am a template! Aren't I <%= adj %>?
+
+i can do
+<%= if 3==7 do %>
+control structures and
+<% end %>
+stuff
